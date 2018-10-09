@@ -21,6 +21,10 @@ En este taller aprenderemos un poco de cómo se estudian las sequencias de ADN, 
 
 ![](https://ka-perseus-images.s3.amazonaws.com/acb2456c90801d7f0db5d0c851cf72d5c0c1481f.png)
 
+
+Utilizar un cuaderno online de [Jupyter](http://jupyter.org/try) para este taller. En el cual pueden resolver los problemas en python, en una especie de cuaderno científico. 
+
+
 ## Ejercicio 1: Cambiar orientación 
 
 Las sequencias de ADN tienen una dirección según la orientación química de los átomos de carbono de la cadena de azúcar. Esta dirección va de 5' a 3'
@@ -52,8 +56,29 @@ Y estos se organizan por pares de modo que **A** siempre se une a **T**, y **C**
 
 **Crear con python** una función que permita encontrar la cadena complementaria de una secuencia de ADN.
 
+## Ejercicio 3: Encontrar la mutación
 
-## Ejercicio 3: Conteo de nucléotidos
+Comparar una secuencia de ADN con el genoma de referencia e imprimir las mutaciones que encuentre:
+
+```python
+def encontrar_mutaciones(referencia, secuencia):
+    # Aquí se escribe la lógica de la función
+    
+
+genoma_referencia = 'TGAGATGCTCA'
+secuencia = 'TGAGATTCTCA'
+
+encontrar_mutaciones(genoma_referencia, secuencia)
+```
+
+Debe imprimir:
+
+`Hay una mutación de G -> T` 
+o 
+
+`Hay una mutación de G -> T en la posición 6` 
+
+## Ejercicio 4: Conteo de nucléotidos
 
 **Crear con python** una función que cuente el número de núcleotidos en una cadena de ADN.
 
@@ -73,11 +98,11 @@ Hay 8 citocinas
 Hay 11 timinas
 ```
 
-**Objetivo Extra**: Gráficar en un histograma
+**RETO Extra**: Gráficar en un histograma
 
 <img src="../captures/hist.png" width="300" height="250" />
 
-## Ejercicio 4: Encontrar patrones en una secuencia
+## Ejercicio 5: Encontrar patrones en una secuencia
 
 Encontrar la posición de una secuencia corta en una cadena larga de ADN:
 
@@ -96,7 +121,7 @@ Imprimiría:
 
 `La posición es 9`
 
-## Ejercicio 5: Contar secuencias patrones
+## Ejercicio 6: Contar secuencias patrones
 
 Contar el número de veces que cierto patrón se repite en una secuencia:
 
@@ -104,10 +129,16 @@ Contar el número de veces que cierto patrón se repite en una secuencia:
 
 En este caso se encontaría 3 veces.
 
-## Ejercicio 6: Transcripción de ADN a ARN
+## Ejercicio 7: Transcripción de ADN a ARN
 
 En ADN hay: A, T, C y G. Pero en ARN no hay T (Tiamina), sino Uracilo (U) como reemplazo. 
 Es decir, que en estos casos se organizan por pares de modo que **A** siempre se une a **U**, y **C** con **G**:
+
+Es decir:
+```
+    A <--> U
+    C <--> G
+```
 
 ![transcripcion](https://ka-perseus-images.s3.amazonaws.com/f3c3c853194a2c7ef9a83715cb145a75d38237cf.png)
 
@@ -126,7 +157,32 @@ Para este proyecto descargar el genoma de Vibrio Colera:
 
 http://bioinformaticsalgorithms.com/data/realdatasets/Replication/Vibrio_cholerae.txt
 
-Importar el genoma y encontrar la secuencia de proteinas que se codificaría: 
+Hay dos formas de importar el genoma con python para guardar en una variable:
+
+1. Haciendo un llamado al link del archivo con `requests`
+
+```python
+import requests
+
+link_del_archivo = ''
+genome = requests.get(link_del_archivo).text
+```
+
+2. Descargando el archivo de texto, guardándolo en una carpeta y utilizar esa locacion del archivo para abrirlo con la función `open`
+
+```python
+locacion_del_archivo = ''
+genoma = open(link_del_archivo)
+```
+
+### Actividad
+
+- Cuántos nucleótidos tiene el genoma?
+- Cuántos A,C,G,T?
+- Encontrar la posición de la secuencia que transcribe el codón de INICIO `AUG`
+
+
+Importar el genoma y encontrar la secuencia de proteinas que se codificaría:
 
 ![proteinas](https://ka-perseus-images.s3.amazonaws.com/51026052e76873dce0042d14ca30cd79c2432f4c.png)
 
