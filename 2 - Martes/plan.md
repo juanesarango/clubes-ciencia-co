@@ -5,7 +5,7 @@
 
 *Early Morning Session: Qué es el ADN, qué es el Cáncer, cómo estudiarlo?*
 
-*Late Morning Session: Big Data, Big Data en Medicina y otros campos?*
+*Late Morning Session: Orders of magnitude*
 
 *Afternoon Session: Bioinformatics Workshop*
 
@@ -31,3 +31,5 @@ Otros sitios con datos públicos. Ideas y aplicaciones:
 ### Proyecto
 - Brilliant Computational Biology
 - Coursera Bioinformatic Exercises 
+
+

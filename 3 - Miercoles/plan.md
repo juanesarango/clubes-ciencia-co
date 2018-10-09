@@ -3,6 +3,7 @@
 ## Horario
 
 *Early Morning Session: Taller Shark Tank Grupos de 5 pensar en ideas de negocio
+Big Data, Big Data en Medicina y otros campos?
 
 *Late Morning Session: Orders of Magnitude Lecture*
 
@@ -13,6 +14,7 @@
 
 ### Reading
 - [Aplicaciones con datos Abiertos](https://herramientas.datos.gov.co/es/usos)
+- [Scale of Universe](http://scaleofuniverse.com)
 
 ### Videos
 

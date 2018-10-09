@@ -108,3 +108,11 @@ futures markets, and data than a U.S. president could only a
 few decades ago
 
 https://www.pbs.org/video/human-face-big-data-how-health-tracking-could-change-society/
+
+https://www.reptic.qc.ca/wp-content/uploads/2014/10/2015-04_Learning_Analytics.pdf
+
+https://www.digitalocean.com/community/tutorials/an-introduction-to-big-data-concepts-and-terminology
+
+
+DS0LXM
+

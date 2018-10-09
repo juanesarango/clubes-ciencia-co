@@ -3,9 +3,8 @@
 
 ## Horario
 
-*Morning Session: Introducción a Computación y Big Data*
-
-*Afternoon Session: Python Workshop*
+* Early Afternoon Session: Introducción a Computación y Big Data*
+* Late Afternoon Session: Python Workshop*
 
 ### Ideas
 
